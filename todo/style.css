@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-100;
+}
+
+.container {
+  @apply max-w-md mx-auto p-4;
+}
+
+.todo-list {
+  @apply divide-y divide-gray-200;
+}
+
+.todo-item {
+  @apply py-4;
+}
+
+.todo-item:hover {
+  @apply bg-gray-50;
+}
+
+.todo-item.completed {
+  @apply text-gray-500;
+}
+
+.todo-item.completed .todo-title {
+  @apply line-through;
+}
+
+.todo-title {
+  @apply font-bold;
+}
+
+.todo-description {
+  @apply text-gray-500;
+}
+
+.button {
+  @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+}
+
+.button:hover {
+  @apply cursor-pointer;
+}
